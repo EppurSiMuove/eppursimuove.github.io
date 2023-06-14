@@ -12,6 +12,9 @@
   html {
     @apply scroll-smooth;
   }
+  .content {
+    @apply bg-darkText w-[80vw] h-[70vh] sm:h-[60vh] mt-[20vh];
+  }
 
 }
 
