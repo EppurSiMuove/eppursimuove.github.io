@@ -1,5 +1,3 @@
-// import { useState } from "react";
-
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
@@ -14,7 +12,6 @@ import "./index.css";
 ></link>;
 
 function App() {
-    // const [count, setCount] = useState(0);
 
     return (
         <div className="overflow-x-hidden">
