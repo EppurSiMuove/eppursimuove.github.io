@@ -14,7 +14,7 @@ import "./index.css";
 function App() {
 
     return (
-        <div className="overflow-x-hidden">
+        <div className="overflow-x-hidden min-w-[300px]">
             <Navbar />
             <Hero />
             <About />

@@ -18,4 +18,10 @@
   .mobile-menu-open {
     @apply fixed inset-0 overflow-y-hidden flex flex-col w-screen h-screen items-center bg-darkText opacity-90 p-4 z-auto;
   }
+  .custom-underline {
+    background-image: linear-gradient(to right, currentColor 0%, transparent 100%);
+    background-repeat: repeat-x;
+    background-size: 100% 3px;
+    background-position: 0 100%;
+  }
 }
