@@ -1,8 +1,8 @@
 const About = () => {
     return (
-        <section id="about" className=" h-screen w-screen bg-green-300">
-            <div className="container h-full w-full flex flex-col items-center justify-center bg-blue-600">
-                <div className=" bg-green-900 content max-w-[1024px] grid grid-cols-1 text-lightText">
+        <section id="about" className=" h-screen w-screen bg-darkText ">
+            <div className="container h-full w-full flex flex-col items-center justify-center ">
+                <div className="content max-w-[1024px] grid grid-cols-1 text-lightText">
                     <div className="space-y-4 portrait:mt-[5vh] mt-[10vh]">
                         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold  hover:text-accent duration-1000">
                             <span className="custom-underline">ABOUT</span>
