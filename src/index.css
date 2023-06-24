@@ -13,7 +13,7 @@
     @apply scroll-smooth;
   }
   .content {
-    @apply bg-darkText w-[80vw] h-[70vh] sm:h-[60vh] mt-[20vh];
+    @apply bg-darkText w-[80vw] h-[80vh] sm:h-[60vh] mt-[10vh] landscape:mt-[20vh];
   }
   .mobile-menu-open {
     @apply fixed inset-0 overflow-y-hidden flex flex-col w-screen h-screen items-center bg-darkText opacity-90 p-4 z-auto;

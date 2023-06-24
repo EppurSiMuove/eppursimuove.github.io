@@ -1,25 +1,13 @@
 import { useState, useEffect } from "react";
 
-// const Logo = () => {
-//     return (
-//         <div className="logo">
-//             <a href="#home">
-//                 <img
-//                     src="https://unsplash.it/60/60"
-//                     alt="logo mario polchert"
-//                 />
-//             </a>
-//         </div>
-//     );
-// };
-
 const Navbar = () => {
-    const [nav, setNav] = useState(false);
+    const [nav, setNav] = useState(true);
     const handleClick = () => setNav(!nav);
+    // const [landscapeOrientation, setLandscapeOrientation] = useState(false);
 
     // Disabling scroll when mobile menu is active
     useEffect(() => {
-        if (nav) {
+        if (!nav) {
             document.body.classList.add("overflow-hidden");
         } else {
             document.body.classList.remove("overflow-hidden");
@@ -27,23 +15,23 @@ const Navbar = () => {
     }, [nav]);
 
     // Needed to add this to avoid disabling if orientation is landscape
-    useEffect(() => {
-        const handleOrientationChange = () => {
-            const isLandscape = window.matchMedia(
-                "(orientation: landscape)"
-            ).matches;
-            setNav(isLandscape);
-        };
+    // useEffect(() => {
+    //     const handleOrientationChange = () => {
+    //         const isLandscape = window.matchMedia(
+    //             "(orientation: landscape)"
+    //         ).matches;
+    //         setLandscapeOrientation(isLandscape);
+    //     };
 
-        window.addEventListener("orientationchange", handleOrientationChange);
+    //     window.addEventListener("orientationchange", handleOrientationChange);
 
-        return () => {
-            window.removeEventListener(
-                "orientationchange",
-                handleOrientationChange
-            );
-        };
-    }, []);
+    //     return () => {
+    //         window.removeEventListener(
+    //             "orientationchange",
+    //             handleOrientationChange
+    //         );
+    //     };
+    // }, []);
 
     return (
         <section className="w-screen fixed ">
@@ -79,7 +67,7 @@ const Navbar = () => {
             </div>
             {/* Mobile menu */}
             <div className="container z-30 flex sm:hidden justify-between items-center bg-darkText p-4">
-                {!nav ? (
+                {nav ? (
                     <>
                         <div className="logo">
                             <a href="#home">
@@ -163,8 +151,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-{
-    /* <div className="flex flex-col w-screen h-screen items-center bg-darkText opacity-95 p-4">
-                        <div className="flex flex-row justify-between w-full items-center"> */
-}
