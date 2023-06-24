@@ -46,21 +46,56 @@ const Navbar = () => {
                     </a>
                 </div>
                 <div className="full-menu">
-                    <ul className="flex flex-row space-x-4 text-2xl cursor-pointer">
+                    <ul className=" flex flex-row space-x-4 text-2xl cursor-pointer ">
                         <li>
-                            <a href="#home">Home</a>
+                            <a
+                                className="group text-lightText hover:text-accent transition-all duration-500 ease-in-out"
+                                href="#home"
+                            >
+                                <span className="bg-left-bottom bg-gradient-to-r from-accent to-accent bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                    HOME
+                                </span>
+                            </a>
                         </li>
                         <li>
-                            <a href="#about">About</a>
+                            <a
+                                className="group text-lightText hover:text-accent transition-all duration-500 ease-in-out"
+                                href="#about"
+                            >
+                                <span className="bg-left-bottom bg-gradient-to-r from-accent to-accent bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                    ABOUT
+                                </span>
+                            </a>
                         </li>
                         <li>
-                            <a href="#tools">Tools</a>
+                            <a
+                                className="group text-lightText hover:text-accent transition-all duration-500 ease-in-out"
+                                href="#tools"
+                            >
+                                <span className="bg-left-bottom bg-gradient-to-r from-accent to-accent bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                    TOOLS
+                                </span>
+                            </a>
                         </li>
                         <li>
-                            <a href="#work">Work</a>
+                            <a
+                                className="group text-lightText hover:text-accent transition-all duration-500 ease-in-out"
+                                href="#work"
+                            >
+                                <span className="bg-left-bottom bg-gradient-to-r from-accent to-accent bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                    WORK
+                                </span>
+                            </a>
                         </li>
                         <li>
-                            <a href="#contact">Contact</a>
+                            <a
+                                className="group text-lightText hover:text-accent transition-all duration-500 ease-in-out"
+                                href="#contact"
+                            >
+                                <span className="bg-left-bottom bg-gradient-to-r from-accent to-accent bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                    CONTACT
+                                </span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -151,3 +186,46 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+{
+    /* <li>
+                            <a
+                                href="#home"
+                                className="hover:text-accent duration-500 "
+                            >
+                                HOME
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#about"
+                                className="hover:text-accent duration-500 "
+                            >
+                                ABOUT
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#tools"
+                                className="hover:text-accent duration-500 "
+                            >
+                                TOOLS
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#work"
+                                className="hover:text-accent duration-500 "
+                            >
+                                WORK
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#contact"
+                                className="hover:text-accent duration-500 "
+                            >
+                                CONTACT
+                            </a>
+                        </li> */
+}
