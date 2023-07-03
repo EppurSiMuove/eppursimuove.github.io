@@ -4,8 +4,8 @@ const About = () => {
             <div className="container h-full w-full flex flex-col items-center justify-center ">
                 <div className="content max-w-[1024px] grid grid-cols-1 text-lightText">
                     <div className="space-y-4 portrait:mt-[5vh] mt-[10vh]">
-                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold  hover:text-accent duration-1000">
-                            <span className="custom-underline">ABOUT</span>
+                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold  ">
+                            <span className="custom-underline hover:text-accent duration-1000 cursor-pointer">ABOUT</span>
                         </h2>
                         <p className="portrait:text-2xl text-lg md:text-2xl">
                             Hi...I&apos;m

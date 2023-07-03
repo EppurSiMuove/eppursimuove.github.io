@@ -34,7 +34,7 @@ const Navbar = () => {
     // }, []);
 
     return (
-        <section className="w-screen fixed ">
+        <section className="w-screen fixed z-10 ">
             {/* Menu */}
             <div className="container hidden sm:flex justify-between items-center bg-blue-400 p-4">
                 <div className="logo">

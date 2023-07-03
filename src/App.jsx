@@ -12,7 +12,6 @@ import "./index.css";
 ></link>;
 
 function App() {
-
     return (
         <div className="overflow-x-hidden min-w-[300px]">
             <Navbar />
