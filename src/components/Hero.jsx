@@ -1,15 +1,18 @@
 const Hero = () => {
     return (
-        <section id="home" className="bg-green-300 h-screen w-screen ">
-            <div className="container h-full w-full flex flex-col items-center justify-center bg-darkText">
+        <section id="home" className="bg-darkText h-screen w-screen ">
+            <div className="container h-full w-full flex flex-col items-center justify-center">
                 <div className="content flex flex-col pt-[10vh] portrait:pt-[10vh]  md:pl-12 md:pt-[10vh]">
-                    <h2 className="text-center portrait:text-center md:text-left text-[4vh] portrait:text-[4vh] md:text-[6vh]  text-paleGreen hover:text-accent duration-1000 cursor-pointer font-bold tracking-normal">
+                    <h2 className="portrait:mx-auto landscape:text-left portrait:text-center portrait:text-[1.7rem] landscape:text-2xl  landscape:lg:text-5xl md:text-[3rem]  text-paleGreen hover:text-accent duration-1000 cursor-pointer font-bold tracking-normal w-fit">
                         Welcome to my website, my name is...
                     </h2>
-                    <h1 className="text-center portrait:text-center md:text-left text-[5vh] portrait:text-[5vh] md:text-[6vh]  font-bold text-lightText cursor-pointer hover:text-accent duration-1000 tracking-normal">
+                    <h1 className="portrait:mx-auto landscape:text-left portrait:text-center text-[2rem] portrait:text-[3rem] landscape:text-3xl landscape:md:text-5xl landscape:lg:text-6xl font-bold text-lightText cursor-pointer hover:text-accent duration-1000 tracking-normal w-fit">
                         Mario Polchert
                     </h1>
-                    <h2 className="text-center portrait:text-center md:text-left text-[4vh] portrait:text-[4vh] md:text-[6vh]  font-bold text-paleGreen hover:text-accent duration-1000 cursor-pointer tracking-normal">
+                    <h2
+                        className="portrait:mx-auto landscape:text-left portrait:text-center text-[4rem] portrait:text-[1.7rem] md:text-[3rem]
+                    landscape:text-2xl landscape:md:text-4xl landscape:lg:text-5xl  font-bold text-paleGreen hover:text-accent duration-1000 cursor-pointer tracking-normal w-fit"
+                    >
                         I&apos;m a Web Developer
                     </h2>
                     <button

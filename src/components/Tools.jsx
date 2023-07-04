@@ -9,7 +9,10 @@ import Tailwind from "../assets/tailwind.png";
 
 const Tools = () => {
     return (
-        <section id="tools" className="bg-darkText h-screen w-screen ">
+        <section
+            id="tools"
+            className="bg-darkText h-screen w-screen landscape:pt-48 landscape:pb-64"
+        >
             <div className="container h-full w-full flex flex-col items-center justify-center ">
                 <div className="content max-w-[1024px] text-lightText ">
                     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold  ">

@@ -9,12 +9,12 @@ function Work() {
     return (
         <section
             id="work"
-            className="bg-darkText h-screen portrait:h-auto w-screen "
+            className="bg-darkText h-screen portrait:h-auto w-screen  "
         >
             <div className="container h-full w-full items-center justify-center ">
-                <div className="content max-w-[1024px] text-lightText landscape:pt-48 mt-0 portrait:pt-36 h-auto">
+                <div className="content max-w-[1024px] text-lightText landscape:pt-[30vh] landscape:lg:pt-[20vh] mt-0 portrait:pt-36 h-auto">
                     {/* Section Title */}
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold pb-4 ">
+                    <h2 className="text-2xl sm:text-3xl  lg:text-4xl font-bold pb-4 ">
                         <span className="custom-underline hover:text-accent duration-1000 cursor-pointer">
                             WORK
                         </span>

@@ -3,8 +3,25 @@ import { useState, useEffect } from "react";
 const Navbar = () => {
     const [nav, setNav] = useState(true);
     const handleClick = () => setNav(!nav);
-    // const [landscapeOrientation, setLandscapeOrientation] = useState(false);
+    const [scrolling, setScrolling] = useState(false);
 
+    const scrollDiv = () => {
+        useEffect(() => {
+            const handleScroll = () => {
+                if (window.scrollY > 0) {
+                    setScrolling(true);
+                } else {
+                    setScrolling(false);
+                }
+            };
+
+            window.addEventListener("scroll", handleScroll);
+
+            return () => {
+                window.removeEventListener("scroll", handleScroll);
+            };
+        }, []);
+    };
     // Disabling scroll when mobile menu is active
     useEffect(() => {
         if (!nav) {
@@ -14,29 +31,17 @@ const Navbar = () => {
         }
     }, [nav]);
 
-    // Needed to add this to avoid disabling if orientation is landscape
-    // useEffect(() => {
-    //     const handleOrientationChange = () => {
-    //         const isLandscape = window.matchMedia(
-    //             "(orientation: landscape)"
-    //         ).matches;
-    //         setLandscapeOrientation(isLandscape);
-    //     };
+    //     <div className={`h-32 md:h-64 bg-blue-500 ${scrolling ? 'h-16 md:h-32' : ''}`}>
+    //     {/* Content */}
+    //   </div>
 
-    //     window.addEventListener("orientationchange", handleOrientationChange);
-
-    //     return () => {
-    //         window.removeEventListener(
-    //             "orientationchange",
-    //             handleOrientationChange
-    //         );
-    //     };
-    // }, []);
-
+    scrollDiv();
     return (
-        <section className="w-screen fixed z-10 ">
+        <section className={`w-screen fixed z-10 `}>
             {/* Menu */}
-            <div className="container hidden sm:flex justify-between items-center bg-blue-400 p-4">
+            <div
+                className={`container hidden sm:flex justify-between items-center bg-darkText bg-opacity-80  p-4 `}
+            >
                 <div className="logo">
                     <a href="#home">
                         <img
@@ -45,7 +50,7 @@ const Navbar = () => {
                         />
                     </a>
                 </div>
-                <div className="full-menu">
+                <div className="full-menu tracking-widest">
                     <ul className=" flex flex-row space-x-4 text-2xl cursor-pointer ">
                         <li>
                             <a
@@ -229,3 +234,23 @@ export default Navbar;
                             </a>
                         </li> */
 }
+
+// const [landscapeOrientation, setLandscapeOrientation] = useState(false);
+// Needed to add this to avoid disabling if orientation is landscape
+// useEffect(() => {
+//     const handleOrientationChange = () => {
+//         const isLandscape = window.matchMedia(
+//             "(orientation: landscape)"
+//         ).matches;
+//         setLandscapeOrientation(isLandscape);
+//     };
+
+//     window.addEventListener("orientationchange", handleOrientationChange);
+
+//     return () => {
+//         window.removeEventListener(
+//             "orientationchange",
+//             handleOrientationChange
+//         );
+//     };
+// }, []);
