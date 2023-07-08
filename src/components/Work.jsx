@@ -118,7 +118,7 @@ function Work() {
                         </a>
                         {/* Grid Element */}
                         <a
-                            href="https://teatime.mariopolchert.com/p"
+                            href="https://teatime.mariopolchert.com/"
                             className="group relative flex flex-col bg-black overflow-hidden rounded-md portrait:max-h-[20vh] max-h-[30vh]"
                         >
                             <img

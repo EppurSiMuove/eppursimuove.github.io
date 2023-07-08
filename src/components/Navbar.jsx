@@ -1,27 +1,10 @@
 import { useState, useEffect } from "react";
+import logo from "../assets/logo_green.svg";
 
 const Navbar = () => {
     const [nav, setNav] = useState(true);
     const handleClick = () => setNav(!nav);
-    const [scrolling, setScrolling] = useState(false);
 
-    const scrollDiv = () => {
-        useEffect(() => {
-            const handleScroll = () => {
-                if (window.scrollY > 0) {
-                    setScrolling(true);
-                } else {
-                    setScrolling(false);
-                }
-            };
-
-            window.addEventListener("scroll", handleScroll);
-
-            return () => {
-                window.removeEventListener("scroll", handleScroll);
-            };
-        }, []);
-    };
     // Disabling scroll when mobile menu is active
     useEffect(() => {
         if (!nav) {
@@ -31,11 +14,6 @@ const Navbar = () => {
         }
     }, [nav]);
 
-    //     <div className={`h-32 md:h-64 bg-blue-500 ${scrolling ? 'h-16 md:h-32' : ''}`}>
-    //     {/* Content */}
-    //   </div>
-
-    scrollDiv();
     return (
         <section className={`w-screen fixed z-10 `}>
             {/* Menu */}
@@ -45,8 +23,9 @@ const Navbar = () => {
                 <div className="logo">
                     <a href="#home">
                         <img
-                            src="https://unsplash.it/60/60"
-                            alt="logo mario polchert"
+                            src={logo}
+                            alt="logo mp - mario polchert"
+                            className="w-[10vh] landscape:w-[15vh] landscape:lg:w-[10vh]"
                         />
                     </a>
                 </div>
@@ -112,8 +91,9 @@ const Navbar = () => {
                         <div className="logo">
                             <a href="#home">
                                 <img
-                                    src="https://unsplash.it/60/60"
+                                    src={logo}
                                     alt="logo mario polchert"
+                                    className="w-[8vh]"
                                 />
                             </a>
                         </div>
@@ -141,8 +121,9 @@ const Navbar = () => {
                             <div className="logo">
                                 <a href="#home" onClick={handleClick}>
                                     <img
-                                        src="https://unsplash.it/60/60"
+                                        src={logo}
                                         alt="logo mario polchert"
+                                        className="w-[8vh]"
                                     />
                                 </a>
                             </div>
@@ -191,66 +172,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-{
-    /* <li>
-                            <a
-                                href="#home"
-                                className="hover:text-accent duration-500 "
-                            >
-                                HOME
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#about"
-                                className="hover:text-accent duration-500 "
-                            >
-                                ABOUT
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#tools"
-                                className="hover:text-accent duration-500 "
-                            >
-                                TOOLS
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#work"
-                                className="hover:text-accent duration-500 "
-                            >
-                                WORK
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#contact"
-                                className="hover:text-accent duration-500 "
-                            >
-                                CONTACT
-                            </a>
-                        </li> */
-}
-
-// const [landscapeOrientation, setLandscapeOrientation] = useState(false);
-// Needed to add this to avoid disabling if orientation is landscape
-// useEffect(() => {
-//     const handleOrientationChange = () => {
-//         const isLandscape = window.matchMedia(
-//             "(orientation: landscape)"
-//         ).matches;
-//         setLandscapeOrientation(isLandscape);
-//     };
-
-//     window.addEventListener("orientationchange", handleOrientationChange);
-
-//     return () => {
-//         window.removeEventListener(
-//             "orientationchange",
-//             handleOrientationChange
-//         );
-//     };
-// }, []);

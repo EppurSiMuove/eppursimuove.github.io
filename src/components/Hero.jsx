@@ -6,12 +6,12 @@ const Hero = () => {
                     <h2 className="portrait:mx-auto landscape:text-left portrait:text-center portrait:text-[1.7rem] landscape:text-2xl  landscape:lg:text-5xl md:text-[3rem]  text-paleGreen hover:text-accent duration-1000 cursor-pointer font-bold tracking-normal w-fit">
                         Welcome to my website, my name is...
                     </h2>
-                    <h1 className="portrait:mx-auto landscape:text-left portrait:text-center text-[2rem] portrait:text-[3rem] landscape:text-3xl landscape:md:text-5xl landscape:lg:text-6xl font-bold text-lightText cursor-pointer hover:text-accent duration-1000 tracking-normal w-fit">
+                    <h1 className="portrait:mx-auto landscape:text-left portrait:text-center text-[2rem] portrait:text-[3rem] landscape:text-3xl landscape:md:text-4xl landscape:lg:text-6xl font-bold text-lightText cursor-pointer hover:text-accent duration-1000 tracking-normal w-fit">
                         Mario Polchert
                     </h1>
                     <h2
                         className="portrait:mx-auto landscape:text-left portrait:text-center text-[4rem] portrait:text-[1.7rem] md:text-[3rem]
-                    landscape:text-2xl landscape:md:text-4xl landscape:lg:text-5xl  font-bold text-paleGreen hover:text-accent duration-1000 cursor-pointer tracking-normal w-fit"
+                    landscape:text-2xl landscape:md:text-3xl landscape:lg:text-5xl  font-bold text-paleGreen hover:text-accent duration-1000 cursor-pointer tracking-normal w-fit"
                     >
                         I&apos;m a Web Developer
                     </h2>

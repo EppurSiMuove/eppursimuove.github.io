@@ -5,7 +5,7 @@ const Contact = () => {
             id="contact"
             className="bg-darkText h-auto w-screen scroll-smooth portrait:h-screen "
         >
-            <div className="container h-full w-full flex flex-col items-center justify-center portrait:pt-16 landscape:pt-16 landscape:md:mt-0">
+            <div className="container h-full w-full flex flex-col items-center justify-center pt-16 landscape:md:mt-0">
                 <div className="content max-w-[1024px] px-4 flex flex-col justify-center items-center w-full h-auto mt-16 landscape:lg:pt-0">
                     <div className="pb-16">
                         <p className="text-2xl md:text-3xl lg:text-4xl font-bold border-b-4 text-lightText border-accent hover:text-accent cursor-pointer duration-1000">
@@ -70,12 +70,12 @@ const Contact = () => {
                                 {/* <FiArrowRightCircle className="group text-2xl ml-3 md:animate-pulse  text-red-500 " /> */}
                             </span>
                         </button>
+                        <footer className="portrait:pt-24 landscape:pb-10 w-full landscape:h-[10vh] landscape:md:h-[5vh] bg-darkText flex justify-center box-border">
+                            <h1 className="text-lightText bg-darkText">
+                                Made by Mario Polchert &copy; {year}
+                            </h1>
+                        </footer>
                     </form>
-                    <footer className="portrait:pt-36 portrait:h-[5vh] w-full landscape:h-[10vh] landscape:md:h-[5vh] bg-darkText flex justify-center box-border">
-                        <h1 className="text-lightText bg-darkText">
-                            Made by Mario Polchert &copy; {year}
-                        </h1>
-                    </footer>
                 </div>
             </div>
         </section>
