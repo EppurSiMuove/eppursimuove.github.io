@@ -67,7 +67,6 @@ const Contact = () => {
                         >
                             SEND MESSAGE
                             <span className="group group-hover:translate-x-2 duration-700">
-                                {/* <FiArrowRightCircle className="group text-2xl ml-3 md:animate-pulse  text-red-500 " /> */}
                             </span>
                         </button>
                         <footer className="portrait:pt-24 landscape:pb-10 w-full landscape:h-[10vh] landscape:md:h-[5vh] bg-darkText flex justify-center box-border">

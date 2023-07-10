@@ -5,6 +5,7 @@ import Tools from "./components/Tools";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import "./index.css";
+import Social from "./components/Social";
 
 <link
     rel="stylesheet"
@@ -15,6 +16,7 @@ function App() {
     return (
         <div className="overflow-x-hidden min-w-[300px]">
             <Navbar />
+            <Social />
             <Hero />
             <About />
             <Tools />
