@@ -20,10 +20,10 @@ const Tools = () => {
                             TOOLS
                         </span>
                     </h2>
-                    <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
+                    <div className="w-full grid grid-cols-2  sm:grid-cols-4 gap-4 text-center py-8">
                         <div className="group shadow-md shadow-[#040c16] hover:scale-110 duration-500 ">
                             <img
-                                className="portrait:w-20 w-24 mx-auto"
+                                className=" portrait:w-20 w-24 mx-auto"
                                 src={HTML}
                                 alt="HTML icon"
                             />
@@ -33,7 +33,7 @@ const Tools = () => {
                         </div>
                         <div className="group shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                             <img
-                                className="portrait:w-20 w-24 mx-auto"
+                                className=" portrait:w-20 w-24 mx-auto"
                                 src={CSS}
                                 alt="CSS icon"
                             />
@@ -43,7 +43,7 @@ const Tools = () => {
                         </div>
                         <div className="group shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                             <img
-                                className="portrait:w-20 w-24 mx-auto"
+                                className=" portrait:w-20 w-24 mx-auto"
                                 src={JavaScript}
                                 alt="JAVASCRIPT icon"
                             />
@@ -53,7 +53,7 @@ const Tools = () => {
                         </div>
                         <div className="group shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                             <img
-                                className="portrait:w-20 w-24 mx-auto"
+                                className=" portrait:w-20 w-24 mx-auto"
                                 src={Wordpress}
                                 alt="HTML icon"
                             />
@@ -63,7 +63,7 @@ const Tools = () => {
                         </div>
                         <div className="group shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                             <img
-                                className="portrait:w-20 w-24 mx-auto"
+                                className=" portrait:w-20 w-24 mx-auto"
                                 src={Tailwind}
                                 alt="TailwindCss icon"
                             />
@@ -83,7 +83,7 @@ const Tools = () => {
                         </div>
                         <div className="group shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                             <img
-                                className="portrait:w-20 w-24 mx-auto"
+                                className=" portrait:w-20 w-24 mx-auto"
                                 src={NextJSIcon}
                                 alt="NEXTJS icon"
                             />
@@ -93,7 +93,7 @@ const Tools = () => {
                         </div>
                         <div className="group shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                             <img
-                                className="portrait:w-20 w-24 mx-auto"
+                                className=" portrait:w-20 w-24 mx-auto"
                                 src={Node}
                                 alt="NODE icon"
                             />

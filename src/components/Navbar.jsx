@@ -15,11 +15,9 @@ const Navbar = () => {
     }, [nav]);
 
     return (
-        <section className={`w-screen fixed z-10 `}>
+        <section className="fixed z-10 w-screen bg-darkText bg-opacity-80">
             {/* Menu */}
-            <div
-                className={`container hidden sm:flex justify-between items-center bg-darkText bg-opacity-80  p-4 `}
-            >
+            <div className="container hidden items-center justify-between   p-4  sm:flex ">
                 <div className="logo">
                     <a href="#home">
                         <img
@@ -30,53 +28,53 @@ const Navbar = () => {
                     </a>
                 </div>
                 <div className="full-menu tracking-widest">
-                    <ul className=" flex flex-row space-x-4 text-2xl cursor-pointer ">
+                    <ul className=" flex cursor-pointer flex-row space-x-4 text-2xl ">
                         <li>
                             <a
-                                className="group text-lightText hover:text-accent transition-all duration-500 ease-in-out"
+                                className="group text-lightText transition-all duration-500 ease-in-out hover:text-accent"
                                 href="#home"
                             >
-                                <span className="bg-left-bottom bg-gradient-to-r from-accent to-accent bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                <span className="bg-gradient-to-r from-accent to-accent bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
                                     HOME
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a
-                                className="group text-lightText hover:text-accent transition-all duration-500 ease-in-out"
+                                className="group text-lightText transition-all duration-500 ease-in-out hover:text-accent"
                                 href="#about"
                             >
-                                <span className="bg-left-bottom bg-gradient-to-r from-accent to-accent bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                <span className="bg-gradient-to-r from-accent to-accent bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
                                     ABOUT
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a
-                                className="group text-lightText hover:text-accent transition-all duration-500 ease-in-out"
+                                className="group text-lightText transition-all duration-500 ease-in-out hover:text-accent"
                                 href="#tools"
                             >
-                                <span className="bg-left-bottom bg-gradient-to-r from-accent to-accent bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                <span className="bg-gradient-to-r from-accent to-accent bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
                                     TOOLS
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a
-                                className="group text-lightText hover:text-accent transition-all duration-500 ease-in-out"
+                                className="group text-lightText transition-all duration-500 ease-in-out hover:text-accent"
                                 href="#work"
                             >
-                                <span className="bg-left-bottom bg-gradient-to-r from-accent to-accent bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                <span className="bg-gradient-to-r from-accent to-accent bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
                                     WORK
                                 </span>
                             </a>
                         </li>
                         <li>
                             <a
-                                className="group text-lightText hover:text-accent transition-all duration-500 ease-in-out"
+                                className="group text-lightText transition-all duration-500 ease-in-out hover:text-accent"
                                 href="#contact"
                             >
-                                <span className="bg-left-bottom bg-gradient-to-r from-accent to-accent bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out">
+                                <span className="bg-gradient-to-r from-accent to-accent bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
                                     CONTACT
                                 </span>
                             </a>
@@ -85,7 +83,7 @@ const Navbar = () => {
                 </div>
             </div>
             {/* Mobile menu */}
-            <div className="container z-30 flex sm:hidden justify-between items-center bg-darkText p-4">
+            <div className="container z-30 flex items-center justify-between bg-darkText p-4 sm:hidden">
                 {nav ? (
                     <>
                         <div className="logo">
@@ -105,7 +103,7 @@ const Navbar = () => {
                                 viewBox="0 0 24 24"
                                 strokeWidth="2.5"
                                 stroke="currentColor"
-                                className="w-12 h-12 text-accent"
+                                className="h-12 w-12 text-accent"
                             >
                                 <path
                                     strokeLinecap="round"
@@ -117,7 +115,7 @@ const Navbar = () => {
                     </>
                 ) : (
                     <div className="mobile-menu-open">
-                        <div className="flex flex-row justify-between w-full items-center">
+                        <div className="flex w-full flex-row items-center justify-between">
                             <div className="logo">
                                 <a href="#home" onClick={handleClick}>
                                     <img
@@ -135,7 +133,7 @@ const Navbar = () => {
                                     viewBox="0 0 24 24"
                                     strokeWidth="2.5"
                                     stroke="currentColor"
-                                    className="w-12 h-12 text-accent"
+                                    className="h-12 w-12 text-accent"
                                 >
                                     <path
                                         strokeLinecap="round"
@@ -146,7 +144,7 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className="full-menu">
-                            <ul className="flex flex-col text-lightText text-2xl text-center cursor-pointer space-y-12 pt-[20vh]">
+                            <ul className="flex cursor-pointer flex-col space-y-12 pt-[20vh] text-center text-2xl text-lightText">
                                 <li onClick={handleClick}>
                                     <a href="#home">Home</a>
                                 </li>

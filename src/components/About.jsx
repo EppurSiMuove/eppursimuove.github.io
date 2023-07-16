@@ -1,21 +1,23 @@
 const About = () => {
     return (
         <section id="about" className=" h-screen w-screen bg-darkText ">
-            <div className="container h-full w-full flex flex-col items-center justify-center ">
-                <div className="content max-w-[1024px] grid grid-cols-1 text-lightText">
-                    <div className="space-y-4 portrait:mt-[5vh] mt-[10vh]">
-                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold  ">
-                            <span className="custom-underline hover:text-accent duration-1000 cursor-pointer">ABOUT</span>
+            <div className="flex h-full w-full flex-col items-center justify-center ">
+                <div className="content grid max-w-[1024px] grid-cols-1 text-lightText landscape:mt-0 landscape:lg:pt-[15vh]">
+                    <div className="mt-[10vh] space-y-4 portrait:mt-[5vh]">
+                        <h2 className="text-2xl font-bold sm:text-3xl lg:text-4xl">
+                            <span className="custom-underline cursor-pointer duration-1000 hover:text-accent">
+                                ABOUT
+                            </span>
                         </h2>
-                        <p className="portrait:text-2xl text-lg md:text-2xl">
+                        <p className="text-lg md:text-2xl landscape-xs:text-2xl portrait:text-2xl">
                             Hi...I&apos;m
-                            <span className=" md:animate-pulse hover:text-accent hover:animate-none cursor-pointer duration-1000">
+                            <span className=" cursor-pointer duration-1000 hover:animate-none hover:text-accent md:animate-pulse">
                                 &nbsp;Mario
                             </span>
                             , it&apos;s good to have you here. Have a look
                             around.
                         </p>
-                        <p className="text-lg md:text-xl">
+                        <p className="text-lg md:text-xl landscape-xs:text-xl">
                             I&apos;m a passionate web developer dedicated to
                             delivering high-quality work. I have a solid
                             foundation in web technologies, and continuously
