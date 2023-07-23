@@ -11,16 +11,16 @@ function Work() {
             id="work"
             className="h-screen w-screen bg-darkText portrait:h-auto"
         >
-            <div className="container flex h-full w-full flex-col items-center justify-center ">
-                <div className="content h-full max-w-[1024px] text-lightText portrait:pt-16 landscape:pt-[7vh] landscape:lg:pt-[5vh]">
-                    {/* Section Title */}
-                    <h2 className="pb-4 text-2xl  font-bold sm:text-3xl lg:text-4xl ">
-                        <span className="custom-underline cursor-pointer duration-1000 hover:text-accent">
-                            WORK
-                        </span>
-                    </h2>
+            <div className="grid place-content-center h-full w-11/12 mx-auto p-4  ">
+                {/* Section Title */}
+                <h2 className="pb-4 text-2xl font-bold sm:text-3xl lg:text-4xl text-lightText ">
+                    <span className="custom-underline cursor-pointer duration-1000 hover:text-accent">
+                        WORK
+                    </span>
+                </h2>
+                <div className="w-full mx-auto  h-full text-lightText  ">
                     {/* Grid Container */}
-                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 ">
+                    <div className="grid mx-auto w-full grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 ">
                         {/* Grid Element */}
                         <a
                             href="https://delicious-kitchen.netlify.app"

@@ -1,9 +1,9 @@
 const About = () => {
     return (
-        <section id="about" className=" h-screen w-screen bg-darkText ">
-            <div className="flex h-full w-full flex-col items-center justify-center ">
-                <div className="content grid max-w-[1024px] grid-cols-1 text-lightText landscape:mt-0 landscape:lg:pt-[15vh]">
-                    <div className="mt-[10vh] space-y-4 portrait:mt-[5vh]">
+        <section id="about" className="grid min-h-screen w-screen bg-darkText ">
+            <div className="grid place-content-center h-auto px-4 md:w-1/2 mx-auto  ">
+                <div className=" text-lightText ">
+                    <div className=" space-y-8 ">
                         <h2 className="text-2xl font-bold sm:text-3xl lg:text-4xl">
                             <span className="custom-underline cursor-pointer duration-1000 hover:text-accent">
                                 ABOUT

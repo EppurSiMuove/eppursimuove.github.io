@@ -9,18 +9,15 @@ import Tailwind from "../assets/tailwind.png";
 
 const Tools = () => {
     return (
-        <section
-            id="tools"
-            className="bg-darkText h-screen w-screen landscape:pt-48 landscape:pb-64"
-        >
-            <div className="container h-full w-full flex flex-col items-center justify-center ">
-                <div className="content max-w-[1024px] text-lightText ">
-                    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold  ">
-                        <span className="custom-underline hover:text-accent duration-1000 cursor-pointer">
-                            TOOLS
-                        </span>
-                    </h2>
-                    <div className="w-full grid grid-cols-2  sm:grid-cols-4 gap-4 text-center py-8">
+        <section id="tools" className="bg-darkText grid min-h-screen w-screen ">
+            <div className=" w-1/2 portrait:w-full mx-auto grid p-4 grid-cols-1 place-content-center">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-lightText ">
+                    <span className="custom-underline hover:text-accent duration-1000 cursor-pointer">
+                        TOOLS
+                    </span>
+                </h2>
+                <div className="grid text-lightText  ">
+                    <div className="w-full grid portrait:grid-cols-2  md:grid-cols-4 gap-4 text-center py-8">
                         <div className="group shadow-md shadow-[#040c16] hover:scale-110 duration-500 ">
                             <img
                                 className=" portrait:w-20 w-24 mx-auto"

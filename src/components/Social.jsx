@@ -3,7 +3,7 @@ import { FiMail } from "react-icons/fi";
 
 const Social = () => {
     return (
-        <div className="hidden lg:flex fixed flex-col top-[45%] left-0">
+        <div className="hidden lg:flex fixed flex-col top-[40%] left-0">
             <ul>
                 <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-0 duration-300 bg-[#333333] rounded-tr-3xl border-r-2 border-t-2 border-accent">
                     <a
