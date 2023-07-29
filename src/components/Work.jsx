@@ -9,18 +9,16 @@ function Work() {
     return (
         <section
             id="work"
-            className="h-screen w-screen bg-darkText portrait:h-auto"
+            className="h-screen w-screen bg-darkText portrait:h-auto portrait:scroll-mt-24 landscape:scroll-mt-16 landscape:lg:scroll-mt-0 landscape:pt-32 landscape:lg:pt-0"
         >
-            <div className="grid place-content-center h-full w-11/12 mx-auto p-4  ">
+            <div className="grid place-content-center h-full mx-auto p-4 scroll-mt-96 ">
                 {/* Section Title */}
-                <h2 className="pb-4 text-2xl font-bold sm:text-3xl lg:text-4xl text-lightText ">
-                    <span className="custom-underline cursor-pointer duration-1000 hover:text-accent">
-                        WORK
-                    </span>
+                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+                    Work
                 </h2>
                 <div className="w-full mx-auto  h-full text-lightText  ">
                     {/* Grid Container */}
-                    <div className="grid mx-auto w-full grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 ">
+                    <div className="grid mx-auto w-[50vw] portrait:w-[84vw] grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 p-4">
                         {/* Grid Element */}
                         <a
                             href="https://delicious-kitchen.netlify.app"

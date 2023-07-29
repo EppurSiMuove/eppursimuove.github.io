@@ -15,7 +15,7 @@ export default {
             },
             colors: {
                 accent: "#39ff14",
-                lightText: "#FFDEAD",
+                lightText: "#d4d4d8",
                 darkText: "#222",
                 paleGreen: "#99de8d",
             },

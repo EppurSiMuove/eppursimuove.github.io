@@ -10,7 +10,7 @@ const Social = () => {
                         className="flex justify-between items-center w-full text-accent pl-4 pr-4 font-extrabold"
                         href="https://www.linkedin.com/in/mariopolchert/"
                     >
-                        Linkedin <FaLinkedin size={30} color={"#FFDEAD"} />
+                        Linkedin <FaLinkedin size={30} color={"#d4d4d8"} />
                     </a>
                 </li>
                 <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-0 duration-300 bg-[#333333] border-r-2 border-accent ">
@@ -18,7 +18,7 @@ const Social = () => {
                         className="flex justify-between items-center w-full text-accent pl-4 pr-4 font-extrabold"
                         href="https://github.com/mariopolchert"
                     >
-                        Github <FaGithub size={30} color={"#FFDEAD"} />
+                        Github <FaGithub size={30} color={"#d4d4d8"} />
                     </a>
                 </li>
                 <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-0 duration-300 bg-[#333333] border-r-2 border-accent">
@@ -26,7 +26,7 @@ const Social = () => {
                         className="flex justify-between items-center w-full text-accent pl-4 pr-4 font-extrabold"
                         href="https://twitter.com/mariopolchert"
                     >
-                        Twitter <FaTwitter size={30} color={"#FFDEAD"} />
+                        Twitter <FaTwitter size={30} color={"#d4d4d8"} />
                     </a>
                 </li>
                 <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-0 duration-300 bg-[#333333] rounded-br-3xl border-r-2 border-b-2 border-accent">
@@ -34,7 +34,7 @@ const Social = () => {
                         className=" flex justify-between items-center w-full text-accent pl-4 pr-4 font-extrabold"
                         href="mailto:mario@mariopolchert.com"
                     >
-                        Email <FiMail size={30} color={"#FFDEAD"} />
+                        Email <FiMail size={30} color={"#d4d4d8"} />
                     </a>
                 </li>
             </ul>

@@ -51,10 +51,10 @@ const Navbar = () => {
                         </li>
                         <li>
                             <a
-                                className="group text-lightText transition-all duration-500 ease-in-out hover:text-accent"
+                                className="group text-lightText transition-all duration-500 ease-in-out hover:text-accent "
                                 href="#tools"
                             >
-                                <span className="bg-gradient-to-r from-accent to-accent bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px]">
+                                <span className="bg-gradient-to-r from-accent to-accent bg-[length:0%_2px] bg-left-bottom bg-no-repeat transition-all duration-500 ease-out group-hover:bg-[length:100%_2px] ">
                                     TOOLS
                                 </span>
                             </a>
