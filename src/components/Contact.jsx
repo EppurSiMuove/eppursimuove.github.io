@@ -70,7 +70,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-            <div className="footer flex-none pb-4 landscape:mt-4 ">
+            <div className="footer flex-none pb-4 landscape:mt-4 cursor-pointer ">
                 <Footer />
             </div>
         </section>
