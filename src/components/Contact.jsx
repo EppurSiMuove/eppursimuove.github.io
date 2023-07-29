@@ -8,7 +8,7 @@ const Contact = () => {
         >
             <div className="min-w-md flex flex-1 items-center justify-center mx-auto landscape:mt-28 landscape:lg:mt-0 landscape:pt-20 landscape:lg:pt-0 ">
                 <div className="form-container w-[40vw] portrait:w-[80vw] h-auto ">
-                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-white">
+                    <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-300">
                         Contact me
                     </h2>
 

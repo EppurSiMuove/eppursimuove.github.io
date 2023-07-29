@@ -13,7 +13,7 @@ function Work() {
         >
             <div className="grid place-content-center h-full mx-auto p-4 scroll-mt-96 ">
                 {/* Section Title */}
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-300 ">
                     Work
                 </h2>
                 <div className="w-full mx-auto  h-full text-lightText  ">

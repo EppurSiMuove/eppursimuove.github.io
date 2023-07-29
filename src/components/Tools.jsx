@@ -14,7 +14,7 @@ const Tools = () => {
             className="bg-darkText grid min-h-screen w-screen portrait:scroll-mt-8 scroll-mt-0 landscape:pt-24 landscape:lg:pt-0"
         >
             <div className=" w-1/2 portrait:w-full mx-auto grid p-4 grid-cols-1 place-content-center">
-                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+                <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-300">
                     Tools
                 </h2>
                 <div className="grid text-lightText  ">
