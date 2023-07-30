@@ -8,6 +8,7 @@
 @layer base {
   body {
       @apply font-[Ruda];    
+      @apply overscroll-none w-[100%];
   }
   html {
     @apply scroll-smooth;
