@@ -15,7 +15,7 @@ const Navbar = () => {
     }, [nav]);
 
     return (
-        <section className="fixed z-10 w-screen bg-darkText bg-opacity-80">
+        <section className="fixed z-10 w-screen bg-darkText bg-opacity-80 overflow-hidden">
             {/* Menu */}
             <div className="container hidden items-center justify-between   p-4  sm:flex ">
                 <div className="logo">

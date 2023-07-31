@@ -14,7 +14,7 @@ import Social from "./components/Social";
 
 function App() {
     return (
-        <div className="overflow-hidden min-w-[300px]">
+        <div className="overflow-hidden min-w-screen">
             <Navbar />
             <Social />
             <Hero />
