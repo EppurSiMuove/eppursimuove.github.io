@@ -6,7 +6,7 @@ const Hero = () => {
                     <h2 className="portrait:mx-auto landscape:text-left portrait:text-center portrait:text-[1.3rem] landscape:text-2xl  landscape:lg:text-5xl md:text-[3rem]  text-paleGreen hover:text-accent duration-1000 cursor-pointer font-bold tracking-normal w-fit">
                         Welcome to my website, my name is...
                     </h2>
-                    <h1 className="portrait:mx-auto landscape:text-left portrait:text-center text-[2rem] portrait:text-[2rem] landscape:text-3xl landscape:md:text-4xl landscape:lg:text-6xl font-bold text-lightText cursor-pointer hover:text-accent duration-1000 tracking-normal w-fit">
+                    <h1 className="portrait:mx-auto landscape:text-left portrait:text-center text-[2rem] portrait:text-4xl landscape:text-4xl landscape:md:text-5xl landscape:lg:text-6xl font-bold text-lightText cursor-pointer hover:text-accent duration-1000 tracking-normal w-fit">
                         Mario Polchert
                     </h1>
                     <h2

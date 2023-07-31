@@ -7,7 +7,7 @@
 
 @layer base {
   body {
-    @apply font-[Ruda];
+    @apply font-[Ruda] overflow-x-hidden;
   }
 
   html {
