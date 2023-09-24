@@ -11,7 +11,7 @@ const Tools = () => {
     return (
         <section
             id="tools"
-            className="bg-darkText grid min-h-screen w-screen portrait:scroll-mt-8 scroll-mt-0 landscape:pt-24 landscape:lg:pt-0"
+            className="bg-darkText grid min-h-screen w-screen portrait:scroll-mt-8 scroll-mt-0 landscape:pt-24 landscape:lg:pt-0 portrait:h-auto"
         >
             <div className=" w-1/2 portrait:w-full mx-auto grid p-4 grid-cols-1 place-content-center">
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-300">

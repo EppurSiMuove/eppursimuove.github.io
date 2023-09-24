@@ -1,7 +1,7 @@
 const Hero = () => {
     return (
         <section id="home" className="bg-darkText grid h-screen w-screen ">
-            <div className="h-full w-full grid place-content-center portrait:p-4">
+            <div className="h-full w-full grid place-content-center portrait:p-4 portrait:h-[100vh]">
                 <div className="pt-[10vh] portrait:pt-[10vh] flex flex-col md:pl-12 md:pt-0 space-y-4">
                     <h2 className="portrait:mx-auto landscape:text-left portrait:text-center portrait:text-[1.3rem] landscape:text-2xl  landscape:lg:text-5xl md:text-[3rem]  text-paleGreen hover:text-accent duration-1000 cursor-pointer font-bold tracking-normal w-fit">
                         Welcome to my website, my name is...

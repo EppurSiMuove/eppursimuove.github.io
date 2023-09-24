@@ -2,7 +2,7 @@ const About = () => {
     return (
         <section
             id="about"
-            className="grid min-h-screen w-screen bg-darkText landscape:scroll-mt-16 landscape:lg:scroll-mt-0 landscape:pt-12 landscape:lg:pt-0 "
+            className="grid min-h-screen w-screen bg-darkText landscape:scroll-mt-16 landscape:lg:scroll-mt-0 landscape:pt-12 landscape:lg:pt-0 portrait:h-[100vh]"
         >
             <div className="grid place-content-center h-auto px-4 md:w-1/2 mx-auto ">
                 <div className=" text-lightText space-y-8 portrait:space-y-16">
