@@ -52,8 +52,7 @@
   .custom-button:hover {
     color: #222;
     font-weight: 800;
-    border: 2px solid #39ff14;
-    scale: 1.05;
+    border: none;
   }
 
   .custom-button:hover:after {
@@ -70,7 +69,7 @@
     width: 0;
     height: 100%;
     background: #39ff14;
-
+    
   }
 
 }

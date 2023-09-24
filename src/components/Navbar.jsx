@@ -144,7 +144,7 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className="full-menu">
-                            <ul className="flex cursor-pointer flex-col space-y-12 pt-[20vh] text-center text-2xl text-lightText">
+                            <ul className="flex cursor-pointer flex-col space-y-10 pt-[18vh] text-center text-2xl text-lightText">
                                 <li onClick={handleClick}>
                                     <a href="#home">Home</a>
                                 </li>
