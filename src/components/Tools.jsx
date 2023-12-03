@@ -1,11 +1,11 @@
-import HTML from "../assets/html.png";
-import CSS from "../assets/css.png";
-import JavaScript from "../assets/javascript.png";
-import ReactImg from "../assets/react.png";
-import Node from "../assets/node.png";
-import Wordpress from "../assets/wordpress.png";
-import NextJSIcon from "../assets/nextjs.png";
-import Tailwind from "../assets/tailwind.png";
+import HTML from "../assets/images/html.png";
+import CSS from "../assets/images/css.png";
+import JS from "../assets/images/javascript.png";
+import Re from "../assets/images/react.png";
+import Node from "../assets/images/node.png";
+import Wordpress from "../assets/images/wordpress.png";
+import NextJSIcon from "../assets/images/nextjs.png";
+import Tailwind from "../assets/images/tailwind.png";
 
 const Tools = () => {
     return (
@@ -42,7 +42,7 @@ const Tools = () => {
                         <div className="group shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                             <img
                                 className=" portrait:w-20 w-24 mx-auto"
-                                src={JavaScript}
+                                src={JS}
                                 alt="JAVASCRIPT icon"
                             />
                             <p className="my-4 text-lightText group-hover:text-accent duration-700">
@@ -72,7 +72,7 @@ const Tools = () => {
                         <div className="group shadow-md shadow-[#040c16] hover:scale-110 duration-500">
                             <img
                                 className="portrait:w-20 w-24 mx-auto"
-                                src={ReactImg}
+                                src={Re}
                                 alt="REACT icon"
                             />
                             <p className="my-4 text-lightText group-hover:text-accent duration-700">

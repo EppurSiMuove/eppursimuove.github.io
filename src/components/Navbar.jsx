@@ -1,9 +1,38 @@
-import { useState, useEffect } from "react";
-import logo from "../assets/logo_green.svg";
+import { useState, useEffect, useRef } from "react";
+import logo from "../assets/images/logo_green.svg";
+
+const menuFixed = document.querySelector(".fixed");
 
 const Navbar = () => {
     const [nav, setNav] = useState(true);
     const handleClick = () => setNav(!nav);
+    const menuRef = useRef(null);
+
+    // JavaScript logic hack to remove id at the end of url
+    window.addEventListener(
+        "hashchange",
+        () => window.history.pushState({}, "", "/"),
+        {}
+    );
+
+    // JavaScript logic to add the 'smaller' class on scroll, also
+    // using the useRef hook to get the menu element - ref={menuRef}
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                menuRef.current.classList.add("smaller");
+            } else {
+                menuRef.current.classList.remove("smaller");
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        // Clean up function
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []); // Empty dependency array means this effect runs once on mount and clean up on unmount
 
     // Disabling scroll when mobile menu is active
     useEffect(() => {
@@ -15,15 +44,20 @@ const Navbar = () => {
     }, [nav]);
 
     return (
-        <section className="fixed z-10 w-screen bg-darkText bg-opacity-80 overflow-hidden">
+        //     <div ref={menuRef} className="menu">
+        //     {/* Your menu items here */}
+        //   </div>
+        <section ref={menuRef} id="menuSection" className="">
             {/* Menu */}
             <div className="container hidden items-center justify-between   p-4  sm:flex ">
                 <div className="logo">
                     <a href="#home">
                         <img
+                            id="logo"
+                            ref={menuRef}
                             src={logo}
                             alt="logo mp - mario polchert"
-                            className="w-[10vh] landscape:w-[15vh] landscape:lg:w-[10vh]"
+                            className="smaller"
                         />
                     </a>
                 </div>

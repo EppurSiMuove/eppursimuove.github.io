@@ -69,7 +69,24 @@
     width: 0;
     height: 100%;
     background: #39ff14;
-    
+
   }
+
+  #menuSection {
+    @apply fixed h-24 z-10 w-screen bg-darkText bg-opacity-80 overflow-hidden transition-all duration-500 ease-in-out;
+  }
+
+  #menuSection.smaller {
+    @apply bg-black transition-all duration-500 ease-in-out;
+  }
+
+  #logo {
+    @apply border-2 border-[#39ff14] rounded-md w-[10vh] landscape:w-[15vh] landscape:lg:w-[10vh] transition-all duration-500 ease-in-out;
+  }
+
+  #logo.smaller {
+    @apply border-2 border-[#39ff14] rounded-md w-[5vh] landscape:w-[7.5vh] transition-all duration-500 ease-in-out;
+  }
+
 
 }
