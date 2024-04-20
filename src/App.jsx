@@ -11,6 +11,7 @@ import Social from "./components/Social";
     rel="stylesheet"
     href="node_modules/modern-normalize/modern-normalize.css"
 ></link>;
+<meta http-equiv="refresh" content="0; url=http://mariopolchert.com" />;
 
 function App() {
     return (

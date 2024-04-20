@@ -6,8 +6,8 @@ const Contact = () => {
             id="contact"
             className="bg-darkText flex flex-col min-h-screen  w-screen -scroll-mt-12 landscape:-scroll-mt-20 portrait:h-[100vh]"
         >
-            <div className="min-w-md flex flex-1 items-center justify-center mx-auto landscape:mt-28 landscape:lg:mt-0 landscape:pt-20 landscape:lg:pt-0 ">
-                <div className="form-container w-[40vw] portrait:w-[80vw] h-auto ">
+            <div className="min-w-md flex flex-1 items-center justify-center mx-auto landscape:mt-32 landscape:lg:mt-0 landscape:pt-20 landscape:lg:pt-28 ">
+                <div className="form-container w-[40vw] portrait:w-[80vw] h-auto  ">
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-300">
                         Contact me
                     </h2>
